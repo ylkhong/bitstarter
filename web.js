@@ -6,7 +6,7 @@ var buffer = new Buffer(30);
 
 var fs = require('fs');
 
-var text = fs.readFileSync('index.html',);
+var text = fs.readFileSync('index.html','utf8');
 console.log(text);
  
 app.get('/', function(request, response) {
