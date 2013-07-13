@@ -4,8 +4,8 @@ var app = express.createServer(express.logger());
 
 fs.readFileSynch('index.html', function(err,data){
 if (err) throw err;
-console.log(data)
-}
+console.log(data);
+});
 
 var buffer = new Buffer(data,"utf-8"); 
 
